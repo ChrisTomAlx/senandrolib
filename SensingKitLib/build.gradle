@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "25.0.0"
+
 
     defaultConfig {
         minSdkVersion 16
@@ -19,6 +19,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.google.android.gms:play-services-location:7.5.0'
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.google.android.gms:play-services-location:15.0.1'
 }
